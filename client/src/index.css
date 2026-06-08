@@ -1,0 +1,38 @@
+@import "tailwindcss";
+
+@theme {
+  --color-gym-bg: #0f0f13;
+  --color-gym-card: #1a1a24;
+  --color-gym-border: #2a2a3a;
+  --color-gym-accent: #6366f1;
+  --color-gym-accent-light: #818cf8;
+  --color-gym-push: #ef4444;
+  --color-gym-pull: #3b82f6;
+  --color-gym-legs: #22c55e;
+  --color-gym-shoulders: #f59e0b;
+  --color-gym-rest: #8b5cf6;
+  --color-gym-text: #e5e7eb;
+  --color-gym-muted: #6b7280;
+  --color-gym-input: #252536;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--color-gym-bg);
+  color: var(--color-gym-text);
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type="number"] {
+  -moz-appearance: textfield;
+}
